@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影片搜索-热播国产片库-高清影片在线观看</title>
+  <meta name="description" content="热播国产片库影片搜索页，可按片名、类型、地区、年份、标签检索高清影片在线观看内容。">
+  <meta name="keywords" content="影片搜索,热播国产影片,国产电影,热门影片,影片片库,高清影片,在线观看,热播电影">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/movie-data.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="热播国产片库">
+        <span class="brand-mark">▶</span>
+        <span class="brand-text">热播国产片库</span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+          <a class="nav-link " href="index.html">首页</a>
+          <a class="nav-link " href="categories.html">分类片库</a>
+          <a class="nav-link " href="ranking.html">热门排行</a>
+          <a class="nav-link active" href="search.html">搜索</a>
+      </nav>
+      <form class="header-search global-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="mobile-toggle" type="button" aria-label="展开导航" data-mobile-toggle>☰</button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+        <a class="mobile-link " href="index.html">首页</a>
+        <a class="mobile-link " href="categories.html">分类片库</a>
+        <a class="mobile-link " href="ranking.html">热门排行</a>
+        <a class="mobile-link active" href="search.html">搜索</a>
+      <form class="mobile-search global-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </header>
+  <main class="container page-block">
+    <section class="page-hero small-hero">
+      <p class="eyebrow">全站搜索</p>
+      <h1>搜索影片</h1>
+      <p>输入片名、题材、年份、地区或标签，快速找到想看的内容。</p>
+    </section>
+    <section class="search-panel">
+      <form class="search-page-form" action="search.html" method="get">
+        <input id="search-page-input" type="search" name="q" placeholder="搜索影片关键词" aria-label="搜索影片关键词">
+        <button type="submit">搜索</button>
+      </form>
+    </section>
+    <section class="movie-grid listing-grid" id="search-results" aria-live="polite"></section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>热播国产片库</h3>
+        <p>热播国产影片栏目聚合近期热度较高的国产电影内容，按类型和口碑进行整理展示。</p>
+      </div>
+      <div>
+        <h4>片库入口</h4>
+        <div class="footer-links">
+            <a href="category-hot.html">热播精选</a>
+            <a href="category-quality.html">口碑佳片</a>
+            <a href="category-suspense.html">悬疑剧场</a>
+            <a href="category-action.html">动作燃片</a>
+            <a href="category-family.html">家庭轻喜</a>
+            <a href="category-scifi.html">科幻奇想</a>
+        </div>
+      </div>
+      <div>
+        <h4>观影导航</h4>
+        <div class="footer-links">
+          <a href="index.html">首页推荐</a>
+          <a href="categories.html">分类总览</a>
+          <a href="ranking.html">热门排行</a>
+          <a href="search.html">影片搜索</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 热播国产片库</div>
+  </footer>
+  <script src="assets/app.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
